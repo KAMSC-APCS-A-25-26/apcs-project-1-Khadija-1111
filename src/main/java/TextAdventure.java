@@ -1,3 +1,15 @@
+/*
+NAME                : Syeda Khadija
+DATE                : 11/04/2025
+PERIOD              : AP CS-A
+BRIEF DESCRIPTION   : A branching adventure set in a haunted high school. The player explores
+                      different locations on site, collects items, manages health/coins/score,
+                      and makes choices that unlock multiple endings.
+HOW TO PLAY         : Run the program and follow on-screen prompts. Enter the number (1/2/3) or y/n
+                      when asked. The game validates input and re-prompts on invalid entries. Health, coins, and
+                      score change based on choices. Try to secure the best ending. After an ending, choose y/n to replay.
+*/
+
 import java.util.Scanner;
 import java.util.Random;
 import java.text.DecimalFormat;
@@ -314,7 +326,7 @@ public class TextAdventure {
                     System.out.println("You unlock the chests with the master key to find them filled with treasures.");
                     System.out.println("After stuffing as much treasure as you can in your backpack (that you brought along), you go back down the ladder and out of the school, extremely satisfied with your night.");
                     score += 7;
-                    choiceLog += "- Happy ending.\n";
+                    choiceLog += "- Best ending.\n";
                 } else if (metJanitor && deal.equals("y") && hasKey && yn.equals("n")) {
                         System.out.println("You keep the key. The ghost vanishes. The janitor appears, nodding: \"Meet me tomorrow.\"");
                         System.out.println(">> SECRET ENDING: You join the secret night watch.");
