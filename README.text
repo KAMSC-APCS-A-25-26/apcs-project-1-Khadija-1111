@@ -1,0 +1,13 @@
+Haunted Halls is a game where you explore a haunted high school at night.
+The story branches early (main entrance vs. side entrance) and splits again
+(science vs. gym, keypad vs. search), creating  different mid-game
+paths. Player state includes health (<=3), coins, score, and two inventory
+booleans: hasFlashlight and hasKey; earlier choices unlock or block later options.
+A for-loop mini-game lets you guess a keypad code in three tries to open the
+library; failure costs health and success later changes the flow. Input is validated at
+every prompt with while loops so the program never crashes. Endings depend on state:
+a True Ending (return the key with enough light/score), a Defeat ending (health ≤ 0),
+and a Secret/Alternative outcome (e.g., the janitor path or leaving unresolved).
+The story map  moves: Steps → Lobby/Boiler → Science/Gym → Hall/Basement → Lab/Gym →
+Library Door (keypad or search) → Library → Rooftop. A choice log and final stats print
+at the end so players can see how their run unfolded.
